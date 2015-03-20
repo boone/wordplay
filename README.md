@@ -15,12 +15,12 @@ require "wordplay"
 word = Wordplay.new("fox")
 word.ordered_letters? # true
 
-word = Wordplay.new("loop")
-word.reverse_ordered_letters # pool
+word = Wordplay.new("pizza")
+word.reverse_ordered_letters # zzpia
 ```
 
 There is also an example which loops through `/usr/share/dict/words` to find
-words with their letters sorted. I think my favorite is *bijoux*.
+words with their letters sorted. I think my favorite is "bijoux".
 
 # Contributing
 
