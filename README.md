@@ -1,5 +1,7 @@
 # Wordplay
 
+![Gem Release Version](https://badge.fury.io/rb/wordplay.svg)
+
 Some interesting methods to use on words.
 
 The idea came from a story about a boy, who, when asked to put words in
