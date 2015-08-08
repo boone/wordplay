@@ -1,7 +1,6 @@
 # Wordplay
 
-Some interesting methods to use on words. Currently can match words with their
-letters in alphabetical or reverse alphabetical order.
+Some interesting methods to use on words.
 
 The idea came from a story about a boy, who, when asked to put words in
 alphabetical order, ordered the letters of the word instead of the words
@@ -21,6 +20,17 @@ word.reverse_ordered_letters # zzpia
 
 There is also an example which loops through `/usr/share/dict/words` to find
 words with their letters sorted. I think my favorite is "bijoux".
+
+## New in Version 0.0.2
+
+Match palindromes!
+
+```ruby
+require "wordplay"
+
+words = Wordplay.new("Do geese see God?") # ignores spaces and punctuation
+words.palindrome? # true
+```
 
 # Contributing
 
