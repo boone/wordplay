@@ -43,4 +43,13 @@ class Wordplay
   def reverse_ordered_letters
     ordered_letters.reverse
   end
+
+  # Public: determines if the provided string is a palindome
+  # Only non-accented ASCII letters are accepted for now.
+  #
+  # Returns a Boolean
+  def palindrome?
+    formatted_word = @word.gsub(/[^a-z]/, "")
+    formatted_word == formatted_word.reverse
+  end
 end

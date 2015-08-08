@@ -43,4 +43,18 @@ describe Wordplay do
         .to eq("tpomliedcca")
     end
   end
+
+  describe "#palindrome?" do
+    ["level", "race car", "Madam, I'm Adam"].each do |string|
+      it "#{string} is a palindrome" do
+        expect(described_class.new(string).palindrome?).to be true
+      end
+    end
+
+    ["pizza", "quick brown fox", "Penguin Farm"].each do |string|
+      it "#{string} is not a palindrome" do
+        expect(described_class.new(string).palindrome?).to be false
+      end
+    end
+  end
 end
