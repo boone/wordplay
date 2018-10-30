@@ -14,5 +14,6 @@ Gem::Specification.new do |s|
                        "examples/**/*", "lib/**/*", "spec/**/*"]
   s.require_path = "lib"
 
-  s.add_development_dependency "rspec", "~> 3.2", ">= 3.2.0"
+  s.add_development_dependency "rspec", "~> 3.8"
+  s.add_development_dependency "rake", "~> 12.3"
 end
