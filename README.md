@@ -1,6 +1,7 @@
 # Wordplay
 
 ![Gem Release Version](https://badge.fury.io/rb/wordplay.svg)
+![Build Status](https://travis-ci.com/boone/wordplay.svg?branch=master)
 
 Some interesting methods to use on words.
 
